@@ -1,0 +1,127 @@
+html, body, #root, .App {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: black;
+    color: #FFB612;
+    position: relative; /* Ensure relative positioning for proper layering */
+}
+
+.header {
+    position: absolute; /* Position header absolutely */
+    top: 0; /* Stick it to the top */
+    left: 0; /* Align to the right */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+.tab-title-container {
+    text-align: center;
+    margin-top: 5px; /* Reduced margin */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFB612;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFB612;
+}
+
+.main-content {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 30px; /* Adjust padding to accommodate the header */
+}
+
+.sidebar {
+    flex-basis: 16.66%; /* 1/6th of the width */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+}
+.tab-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tab-item {
+    background-color: #FFB612;
+    color: black;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.tab-item:hover {
+    background-color: darkgoldenrod;
+}
+
+.content {
+    flex: 1; /* Takes up the remaining width */
+    padding: 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.toolbar {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 0;
+}
+ 
+.data-grid {
+    flex: 1; /* Takes up the remaining space in the content area */
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: auto; /* Enables scrolling if the content overflows */
+}
+
+    .data-grid table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .data-grid th, .data-grid td {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    .data-grid th {
+        background-color: #f4f4f4;
+    }

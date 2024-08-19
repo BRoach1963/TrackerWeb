@@ -1,0 +1,54 @@
+.team-content {
+    background-color: black; /* Set the background of the team content to black */
+    color: #FFB612; /* Default text color */
+}
+
+.data-grid th {
+    background-color: black; /* Background color of the headers */
+    color: #FFB612; /* Font color of the headers */
+    border: 1px solid #FFB612; /* Border for the headers */
+    padding: 10px; /* Add some padding for better spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.data-grid td {
+    border: 1px solid #FFB612; /* Grid lines color */
+    padding: 10px; /* Add padding for content */
+    color: #FFB612; /* Font color of the data cells */
+}
+
+.profile-column {
+    width: 35px;  
+    text-align: center;  
+}
+ 
+.profile-pic {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFB612;
+    margin: 0 5px; /* 5px margins on left and right */
+}
+
+.data-grid {
+    background-color: black; /* Background color of the grid */
+}
+
+.data-grid tr:hover, .data-grid tr.selected {
+   background-color: #FFB612; /* Inverted background color */
+   color: black; /* Inverted font color */
+}
+
+    .data-grid tr:hover td, .data-grid tr.selected td {
+        border-color: black; /* Grid lines should turn black */
+        color: black; /* Ensure text color turns black */
+    }
+
+    .data-grid tr:hover .profile-pic svg path,
+    .data-grid tr.selected .profile-pic svg path {
+        fill: black !important; /* Invert the SVG path color when row is hovered/selected */
+    }
+
+
+

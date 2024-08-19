@@ -1,0 +1,63 @@
+.dialog {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFB612;
+    width: 450px; /* Increase width if necessary to accommodate content */
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: move;
+    z-index: 1001;
+}
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+body {
+    overflow: hidden; /* Prevent scrolling when dialog is open */
+}
+
+.dialog form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    column-gap: 20px; /* Space between columns */
+    row-gap: 15px; /* Space between rows */
+}
+
+.dialog label {
+    display: block;
+    text-align: left;
+}
+
+.dialog input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensure padding doesn't exceed container */
+}
+
+.dialog-actions {
+    grid-column: span 2; /* Make actions span both columns */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.dialog-actions button {
+    margin-left: 10px;
+}
+
+h2{
+    margin-top: 0px;
+    font-size: 17px;
+}

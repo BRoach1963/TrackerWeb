@@ -1,0 +1,27 @@
+.toolbar-button {
+    margin: 3px;
+    height: 35px; /* Set the height to 25px */
+    width: 35px; /* Set the width to 25px */
+    background-color: black;
+    border: 1px solid #FFB612; /* ForegroundBrush color */
+    border-radius: 3px;
+    padding: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, fill 0.3s ease;
+}
+.toolbar-button:hover {
+        background-color: #FFB612; /* Highlight on hover */
+}
+
+.toolbar-button:hover .toolbar-icon {
+            fill: black; /* Change icon fill to black on hover */
+ }
+
+.toolbar-icon {
+    width: 20px; /* Adjust the icon size within the button */
+    height: 20px; /* Adjust the icon size within the button */
+    fill: #FFB612; /* ForegroundBrush color */
+}

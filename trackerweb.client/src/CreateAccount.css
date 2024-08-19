@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.header {
+    position: fixed; /* Position the header relative to the viewport */
+    top: 20px; /* Position it at the top of the viewport */
+    left: 20px; /* Align it to the left of the viewport */
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FFB612;
+}
+
+.create-account {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #FFB612;
+    width: 450px; /* Adjust the width if needed */
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    margin: 80px auto 20px auto; /* Ensure form is centered, accounting for header space */
+    position: relative;
+    overflow-y: auto; /* Ensure scrolling within the container */
+}
+
+    .create-account form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-grow: 1; /* Ensure the form grows as needed */
+    }
+
+    .create-account label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+        color: #FFB612;
+    }
+
+    .create-account input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 15px;
+    }
+
+.create-account-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+    .create-account-actions button {
+        margin-left: 10px;
+        padding: 10px 20px;
+        background-color: #FFB612;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: black;
+        font-weight: bold;
+    }
+
+h2 {
+    margin-top: 0px;
+    font-size: 20px;
+    color: #FFB612;
+    text-align: center;
+}
+
+.profile-pic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #FFB612;
+}
+
+.profile-pic-change-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #FFB612;
+}
+
+    .profile-pic-change-button svg {
+        fill: #FFB612;
+        margin-right: 5px;
+    }
+
+    .profile-pic-change-button:hover .tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    background-color: black;
+    color: #FFB612;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 5px;
+    transition: opacity 0.3s ease;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto; /* Allow vertical scrolling */
+}

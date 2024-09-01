@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
   <!-- Rounded rectangle border with ffb612 color -->
-  <rect x="0.5" y="0.5" width="23" height="23" rx="4" ry="4" fill="none" stroke="#FFB612" stroke-width="1"/>
+  <rect x="0.5" y="0.5" width="23" height="23" rx="4" ry="4" fill="none" stroke="#FFB612" stroke-width="1.5"/>
 
   <!-- Black background with rounded corners -->
   <rect x="1" y="1" width="22" height="22" rx="4" ry="4" fill="black"/>
